@@ -27,6 +27,10 @@
 			return result;
 		}
 
+		$("input[type='submit']").on('click', function(){
+			$('.card').addClass('flipped');
+		});
+
 
 	});
 
