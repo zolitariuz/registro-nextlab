@@ -220,11 +220,11 @@ html, body{ width: 100%; height: 100%; background: @highlight; .font; }
 
 .cardContainer{ position: relative; top: 30%; .perspective(1500px); .transition(); }
 
-.card{ .border-radius; .preserve; .transition;
+.card{ .preserve; .transition;
 
 	&.flipped{ .rotatey(180deg); }
 
-	> div{ width: 100%; background: @claro; position: absolute; .backface(hidden);
+	> div{ width: 100%; .border-radius; background: @claro; position: absolute; .backface(hidden);
 		&.back{ .rotatey(180deg); }
 	}
 
