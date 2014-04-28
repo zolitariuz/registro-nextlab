@@ -12,12 +12,15 @@
 			return regExp.test(email);
 		};
 
+		if($('#hola').val() == "1")
+			flipCard();
+
 	});
 
 })(jQuery);
 
 function flipCard(){
-	$('.card').hide();
+	$('.card').addClass('flipped');
 	console.log('flip');
 	console.log($('.card'));
 }
