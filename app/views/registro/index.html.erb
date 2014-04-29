@@ -1,0 +1,38 @@
+<% if !flash[:notice].blank? %>
+	<input id="hola" value="1" type="hidden">
+<% end %>
+<div class="columna c-3 medium-6 small-12 cardContainer center">
+
+	<div class="card">
+
+		<div class="front">
+
+			<%= image_tag('logo-nextlab.png', :alt=> "Nextlab") %>
+
+			<div class="clear"></div>
+
+			<%= form_for(:registered_user, :url => {:action => 'register'}) do |f| %>
+				<%= f.text_field(:name, :placeholder => "&#xf007; Nombre".html_safe) %>
+				<%= f.email_field(:email, :placeholder => "&#xf0e0; Correo".html_safe) %>
+
+				<%= submit_tag("Registrarme al evento") %>
+			<% end %>
+
+		</div><!-- front -->
+
+		<div class="back">
+
+			<%= image_tag('logo-nextlab.png', :alt=> "Nextlab") %>
+
+			<div class="clear"></div>
+
+			<p>Gracias por tu registro</p>
+
+		</div><!-- back -->
+
+	</div><!-- card -->
+
+</div><!-- servicioContainer -->
+
+
+
